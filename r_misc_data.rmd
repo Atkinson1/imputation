@@ -1,0 +1,89 @@
+# Ed repo resources
+
+
+---
+
+# math
+https://www.rapidtables.com/math/algebra/Logarithm.html
+https://mathinsight.org/index/general
+
+# stats
+https://www.statology.org/
+https://stattrek.com/
+https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_OpenIntro_Statistics_(Diez_et_al). # full course
+https://www.statisticshowto.com/
+https://onlinestatbook.com/ # full course
+
+
+
+
+# software/coding books:
+https://leanpub.com/
+
+
+
+
+
+# educational courses
+edex.org
+
+# QGIS
+qgis - open source geographic information system
+https://docs.qgis.org/testing/en/docs/training_manual/
+https://download.qgis.org/downloads/data/ # data that goes w/ above training manual
+
+https://github.com/packtpublishing/mastering-geospatial-development-with-qgis-3.x
+https://www.youtube.com/watch?v=NHolzMgaqwE
+
+https://www.usgs.gov/the-national-map-data-delivery/gis-data-download
+---
+
+
+--- Data Science
+https://towardsdatascience.com/
+
+
+--- Code
+https://www.geeksforgeeks.org/
+
+
+
+      --- R
+
+R Statistics course
+https://bookdown.org/mpfoley1973/statistics/statistical-inference.html
+
+R with Github book
+https://happygitwithr.com/index.html
+
+
+# GGplot resources
+https://statisticsnz.github.io/simplevis/articles/simplevis.html 
+https://cran.r-project.org/web/packages/egg/vignettes/Ecosystem.html
+
+# modifying theme components
+https://ggplot2.tidyverse.org/reference/theme.html
+https://ggplot2.tidyverse.org/reference/element.html
+
+# html widgets -- interactive web visualizations (plotly, dygraphs, leaflet, etc.) 
+https://www.htmlwidgets.org/showcase_dygraphs.html
+
+
+# ggplot2 course
+https://ggplot2-book.org/introduction.html 
+
+# plotly in r
+https://plotly.com/r/
+
+# time-series
+https://rstudio.github.io/dygraphs/
+
+
+
+    # infer and statistical tests
+https://bookdown.org/dli/rguide/
+
+# Statistical Inference via Data Science w/ ModernDive Package
+https://moderndive.com/index.html
+
+
