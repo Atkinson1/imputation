@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Hmisc"
 author: "Ryan Atkinson"
 date: "5/26/2022"
 output: html_document
@@ -9,14 +9,52 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+reference: https://rstudio-pubs-static.s3.amazonaws.com/344055_0c737f77c0ef4e36b6865cb843a7bb4a.html#hmisc
 
+# Hmisc
+
+It offers 2 powerful functions for imputing missing values. These are impute() and aregImpute(). Though, it also has transcan() function, but aregImpute() is better to use.
+
+Here are some important highlights of this package:
+
+    It assumes linearity in the variables being predicted.
+    Fisher’s optimum scoring method is used for predicting categorical variables.
+
+```{r, echo = FALSE, comment=FALSE}
+library(Hmisc)
+library(missForest)
+library(tidyverse)
+#load data
+data("iris")
+
+#introduce missing values to the data (10%)
+iris_mis <- prodNA(iris, noNA = 0.1)
+```
+
+```{r, echo = FALSE } 
+#using aregImpute(): multiple imputation
+
+impute_areg <- aregImpute(~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width + Species, data = iris_mis, n.impute = 5)
+
+# aregImpute() automatically identifies the variable type and treats them accordingly.
+
+impute_areg
+
+# The output shows R² values for predicted missing values. Higher the value, better are the values predicted. You can also check imputed values using the following command
+
+# check imputed variable Sepal.Length
+# impute_areg$imputed$Sepal.Length
+```
 
 ```{r}
+# using impute.transcan to create dataset of imputed values
+complete_data <- impute.transcan(impute_areg, imputation=1, data=iris_mis, list.out=TRUE,pr=FALSE, check=TRUE) 
+```
 
+```{r}
+complete_data <- complete_data %>% as_tibble() # turning into tibble will remove asterisks
 ```
 
 
-```{r pressure, echo=FALSE}
 
-```
 
